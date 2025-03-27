@@ -81,12 +81,12 @@ const muscleWiseWorkouts = [
     name: "biceps",
     exercises: [
       "Barbell Curls",
-      "EZ-Bar Curls (Wide Grip, Close Grip)",
+      "Ez-Bar Curls (Wide Grip, Close Grip)",
       "Dumbbell Curls (Hammer, Supinated, Concentration)",
       "Alternating Dumbbell Curls",
       "Incline Dumbbell Curls",
       "Cable Curls (Straight Bar, Rope, Single Arm)",
-      "Preacher Curls (Machine or Bench)",
+      "Preacher Curls (Machine Or Bench)",
     ],
   },
   {
@@ -110,7 +110,7 @@ const muscleWiseWorkouts = [
       "Leg Raises (Hanging, Lying)",
       "Cable Woodchoppers",
       "Weighted Sit-Ups",
-      "Russian Twists (With Plate or Medicine Ball)",
+      "Russian Twists (With Plate Or Medicine Ball)",
       "Ab Rollouts (Using an Ab Wheel)",
       "Stability Ball Plank",
       "Dragon Flags",

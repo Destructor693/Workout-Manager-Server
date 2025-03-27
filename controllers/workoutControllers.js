@@ -3,14 +3,16 @@ const Workout = require("../models/workoutModel");
 const mongoose = require("mongoose");
 const muscleWiseWorkouts=require('../config/constants')
 async function getWorkout(req, res) {
-  const workouts = await Workout.find({}).sort({ createdAt: -1 });
+  const user_id=req.user._id;
+  const workouts = await Workout.find({user_id}).sort({ createdAt: -1 });
   res.status(200).json(workouts);
 }
 
 async function createWorkout(req, res) {
   const { title, muscle_Group, weight, reps } = req.body;
   try {
-    const workout = await Workout.create({ title, muscle_Group, weight, reps });
+    const user_id=req.user._id;
+    const workout = await Workout.create({ title, muscle_Group, weight, reps,user_id });
     res.status(200).json(workout);
   } catch (error) {
     res.status(400).json(error);
